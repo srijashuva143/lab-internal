@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Wonder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .color-box:hover {
+            transform: scale(1.1);
+        }
+
+        .icon {
+            color: #fff;
+            font-size: 24px;
+            margin-top: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .color-box:hover .icon {
+            transform: rotate(360deg);
+        }
+
+        .text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="color-box" style="background-color: #007bff;">
+            <i class="fas fa-palette icon"></i>
+            <p class="text">Blue</p>
+        </div>
+        <div class="color-box" style="background-color: #28a745;">
+            <i class="fas fa-palette icon"></i>
+            <p class="text">Green</p>
+        </div>
+        <div class="color-box" style="background-color: #dc3545;">
+            <i class="fas fa-palette icon"></i>
+            <p class="text">Red</p>
+        </div>
+        <div class="color-box" style="background-color: #ffc107;">
+            <i class="fas fa-palette icon"></i>
+            <p class="text">Yellow</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Visual Wonder. All rights reserved.</p>
+    </div>
+
+    <script>
+        const colorBoxes = document.querySelectorAll('.color-box');
+
+        colorBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                const color = box.style.backgroundColor;
+                document.body.style.backgroundColor = color;
+            });
+        });
+    </script>
+</body>
+
+</html>

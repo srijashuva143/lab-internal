@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Looping Statements in JavaScript</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    code {
+        background-color: #f1f1f1;
+        padding: 2px 4px;
+        border-radius: 3px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Looping Statements in JavaScript</h1>
+    <p>In JavaScript, there are several types of loops to iterate over arrays, objects, or to execute code repeatedly. The most common looping statements are <strong>for</strong> loop, <strong>while</strong> loop, and <strong>do-while</strong> loop.</p>
+    <p>1. <strong>For Loop:</strong></p>
+    <pre><code>for (initialization; condition; increment/decrement) {
+    // code block to be executed
+}</code></pre>
+    <p>2. <strong>While Loop:</strong></p>
+    <pre><code>while (condition) {
+    // code block to be executed
+}</code></pre>
+    <p>3. <strong>Do-While Loop:</strong></p>
+    <pre><code>do {
+    // code block to be executed
+} while (condition);</code></pre>
+    <p>Explanation:</p>
+    <ul>
+        <li><strong><code>initialization</code>:</strong> An expression (including assignment expressions) or variable declaration. Typically used to initialize a counter variable.</li>
+        <li><strong><code>condition</code>:</strong> An expression evaluated before each iteration. If this expression evaluates to true, the loop continues. If false, the loop ends.</li>
+        <li><strong><code>increment/decrement</code>:</strong> An expression to be evaluated after each iteration of the loop. Typically used to increment or decrement the counter variable.</li>
+    </ul>
+    <p>Example:</p>
+    <pre><code>let fruits = ['Apple', 'Banana', 'Orange'];
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+let i = 0;
+while (i < fruits.length) {
+    console.log(fruits[i]);
+    i++;
+}
+
+let j = 0;
+do {
+    console.log(fruits[j]);
+    j++;
+} while (j < fruits.length);</code></pre>
+    <p>This code snippet will output:</p>
+    <pre><code>Apple
+Banana
+Orange
+Apple
+Banana
+Orange
+Apple
+Banana
+Orange</code></pre>
+</div>
+</body>
+</html>

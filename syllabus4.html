@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Window Object</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #666;
+    margin-top: 20px;
+}
+
+p {
+    color: #333;
+}
+
+code {
+    font-family: monospace;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+</style>
+</head>
+<body>
+<h1>Window Object</h1>
+<p>The window object represents a window in the browser. An object of window is created automatically by the browser.</p>
+<p>Window is the object of the browser, it is not the object of JavaScript. The JavaScript objects are string, array, date, etc.</p>
+<p>Note: if an HTML document contains a frame or iframe, the browser creates additional window objects for each frame.</p>
+<h2>Methods of Window Object</h2>
+<p>The important methods of the window object are as follows:</p>
+<table>
+    <tr>
+        <th>Method</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><code>alert()</code></td>
+        <td>displays the alert box containing a message with an OK button.</td>
+    </tr>
+    <tr>
+        <td><code>confirm()</code></td>
+        <td>displays the confirm dialog box containing a message with OK and Cancel buttons.</td>
+    </tr>
+    <tr>
+        <td><code>prompt()</code></td>
+        <td>displays a dialog box to get input from the user.</td>
+    </tr>
+    <tr>
+        <td><code>open()</code></td>
+        <td>opens a new window.</td>
+    </tr>
+    <tr>
+        <td><code>close()</code></td>
+        <td>closes the current window.</td>
+    </tr>
+    <tr>
+        <td><code>setTimeout()</code></td>
+        <td>performs an action after a specified time like calling a function, evaluating expressions, etc.</td>
+    </tr>
+</table>
+
+<h2>Example of alert() in JavaScript</h2>
+<p>It displays an alert dialog box with a message and an OK button.</p>
+<pre><code>&lt;script type="text/javascript"&gt;  
+function msg(){  
+ alert("Hello Alert Box");  
+}  
+&lt;/script&gt;  
+&lt;input type="button" value="click" onclick="msg()"/&gt;  
+</code></pre>
+
+<h2>Example of confirm() in JavaScript</h2>
+<p>It displays the confirm dialog box with a message and OK and Cancel buttons.</p>
+<pre><code>&lt;script type="text/javascript"&gt;  
+function msg(){  
+var v= confirm("Are u sure?");  
+if(v==true){  
+alert("ok");  
+}  
+else{  
+alert("cancel");  
+}  
+}  
+&lt;/script&gt;  
+&lt;input type="button" value="delete record" onclick="msg()"/&gt;  
+</code></pre>
+
+<h2>Example of prompt() in JavaScript</h2>
+<p>It displays a prompt dialog box for input with a message and a textfield.</p>
+<pre><code>&lt;script type="text/javascript"&gt;  
+function msg(){  
+var v= prompt("Who are you?");  
+alert("I am "+v);  
+}  
+&lt;/script&gt;  
+&lt;input type="button" value="click" onclick="msg()"/&gt;  
+</code></pre>
+
+<h2>Example of open() in JavaScript</h2>
+<p>It opens the content in a new window.</p>
+<pre><code>&lt;script type="text/javascript"&gt;  
+function msg(){  
+open("http://www.javatpoint.com");  
+}  
+&lt;/script&gt;  
+&lt;input type="button" value="javatpoint" onclick="msg()"/&gt;  
+</code></pre>
+
+<h2>Example of setTimeout() in JavaScript</h2>
+<p>It performs its task after the given milliseconds.</p>
+<pre><code>&lt;script type="text/javascript"&gt;  
+function msg(){  
+setTimeout(  
+function(){  
+alert("Welcome to Javatpoint after 2 seconds")  
+},2000);  
+}  
+&lt;/script&gt;  
+&lt;input type="button" value="click" onclick="msg()"/&gt;  
+</code></pre>
+</body>
+</html>

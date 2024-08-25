@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date and Time</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    body {
+font-family: Arial, sans-serif;
+margin: 20px;
+line-height: 1.6;
+}
+
+h1 {
+color: #333;
+}
+
+h2 {
+color: #666;
+margin-top: 20px;
+}
+
+p {
+color: #333;
+}
+
+ul {
+margin-left: 20px;
+}
+
+pre {
+background-color: #f4f4f4;
+padding: 10px;
+border-radius: 5px;
+}
+
+code {
+font-family: 'Courier New', Courier, monospace;
+}
+
+</style>
+</head>
+<body>
+<h1>Date and Time</h1>
+<p>Let’s meet a new built-in object: Date. It stores the date, time and provides methods for date/time management.</p>
+<p>For instance, we can use it to store creation/modification times, to measure time, or just to print out the current date.</p>
+
+<h2>Creation</h2>
+<p>To create a new Date object call new Date() with one of the following arguments:</p>
+<ul>
+    <li><code>new Date()</code>: Without arguments – create a Date object for the current date and time.</li>
+    <li><code>new Date(milliseconds)</code>: Create a Date object with the time equal to number of milliseconds passed after the Jan 1st of 1970 UTC+0.</li>
+</ul>
+
+<p>For example:</p>
+<pre><code>// 0 means 01.01.1970 UTC+0
+let Jan01_1970 = new Date(0);
+alert( Jan01_1970 );
+
+// now add 24 hours, get 02.01.1970 UTC+0
+let Jan02_1970 = new Date(24 * 3600 * 1000);
+alert( Jan02_1970 );
+</code></pre>
+
+<h2>Explanation</h2>
+<p>An integer number representing the number of milliseconds that has passed since the beginning of 1970 is called a timestamp.</p>
+<p>It’s a lightweight numeric representation of a date. We can always create a date from a timestamp using <code>new Date(timestamp)</code> and convert the existing Date object to a timestamp using the <code>date.getTime()</code> method.</p>
+<p>Dates before 01.01.1970 have negative timestamps.</p>
+
+<!-- Add more content here -->
+
+<h2>Dates before 01.01.1970</h2>
+<p>Dates before 01.01.1970 have negative timestamps, e.g.:</p>
+<pre><code>// 31 Dec 1969
+let Dec31_1969 = new Date(-24 * 3600 * 1000);
+alert( Dec31_1969 );
+</code></pre>
+
+<h2><code>new Date(dateString)</code></h2>
+<p>If there is a single argument, and it’s a string, then it is parsed automatically. The algorithm is the same as Date.parse uses.</p>
+<p>For example:</p>
+<pre><code>let date = new Date("2017-01-26");
+alert(date);
+</code></pre>
+
+<h2><code>new Date(year, month, date, hours, minutes, seconds, ms)</code></h2>
+<p>Create the date with the given components in the local time zone. Only the first two arguments are obligatory.</p>
+<p>The maximal precision is 1 ms (1/1000 sec).</p>
+<p>For example:</p>
+<pre><code>let date = new Date(2011, 0, 1, 2, 3, 4, 567);
+alert( date ); // 1.01.2011, 02:03:04.567
+</code></pre>
+
+<h2>Access date components</h2>
+<p>There are methods to access the year, month and so on from the Date object:</p>
+<ul>
+    <li><code>getFullYear()</code>: Get the year (4 digits)</li>
+    <li><code>getMonth()</code>: Get the month, from 0 to 11</li>
+    <li><code>getDate()</code>: Get the day of month, from 1 to 31</li>
+    <!-- Add more items if needed -->
+</ul>
+</body>
+</html>

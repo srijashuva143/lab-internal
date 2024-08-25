@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal and External JavaScript Examples</title>
+</head>
+
+<body>
+    <h1>Internal JavaScript Example</h1>
+    <p>JavaScript code is placed in the head and body section of an HTML page.</p>
+    <h2>Example:</h2>
+    <pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Internal JavaScript&lt;/title&gt;
+
+&lt;script type="text/javascript"&gt;
+  document.write("This is Internal Javascript Example.!!!");
+&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <p>Output:</p>
+    <p>This is Internal Javascript Example.!!!</p>
+
+    <h1>External JavaScript Example</h1>
+    <p>JavaScript code is stored in a separate external file using the .js extension (Ex: external.js).</p>
+    <p>In the HTML file, the <code>&lt;script&gt;</code> tag can also be used to indicate the location of a JavaScript file. The <code>src</code> attribute is assigned the path and filename of the file.</p>
+    <h3>external.js</h3>
+    <pre><code>document.write("This is External Javascript Example.!!!");</code></pre>
+    <h2>Example:</h2>
+    <pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;External JavaScript&lt;/title&gt;
+&lt;script type="text/javascript" src="external.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <p>Output:</p>
+    <p>This is External Javascript Example.!!!</p>
+</body>
+
+</html>

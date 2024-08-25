@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Switch Case Statement in JavaScript</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    code {
+        background-color: #f1f1f1;
+        padding: 2px 4px;
+        border-radius: 3px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Switch Case Statement in JavaScript</h1>
+    <p>The <strong>switch case statement</strong> in JavaScript is used to perform different actions based on different conditions. It is a type of conditional statement that evaluates an expression, matches the expression value to a case label, and executes the code block associated with that case.</p>
+    <p>Here's the basic syntax of a switch case statement:</p>
+    <pre><code>switch(expression) {
+    case label1:
+        // code block for label1
+        break;
+    case label2:
+        // code block for label2
+        break;
+    default:
+        // default code block
+}</code></pre>
+    <p>Explanation of the parts:</p>
+    <ul>
+        <li><strong><code>switch(expression)</code>:</strong> The expression is evaluated once. The value of the expression is compared with the values of each case label.</li>
+        <li><strong><code>case label:</code></strong> A case label is used to match the value of the expression. If the value matches, the code block associated with that case is executed.</li>
+        <li><strong><code>break</code>:</strong> The <code>break</code> statement is used to terminate the switch case statement. If omitted, the code execution will "fall through" to the next case.</li>
+        <li><strong><code>default:</code></strong> The <code>default</code> case is optional. It is executed if no case matches the expression value.</li>
+    </ul>
+    <p>Example:</p>
+    <pre><code>let fruit = 'Apple';
+switch(fruit) {
+    case 'Apple':
+        console.log('It is an apple.');
+        break;
+    case 'Banana':
+        console.log('It is a banana.');
+        break;
+    default:
+        console.log('Unknown fruit.');
+}</code></pre>
+    <p>This code snippet will output: <code>It is an apple.</code></p>
+</div>
+</body>
+</html>

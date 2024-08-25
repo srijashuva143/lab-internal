@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Functions in JavaScript</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    code {
+        background-color: #f1f1f1;
+        padding: 2px 4px;
+        border-radius: 3px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Functions in JavaScript</h1>
+    <p>In JavaScript, functions are blocks of code that can be called to perform a specific task. There are several types of functions in JavaScript:</p>
+    <ul>
+        <li><strong>Regular Functions:</strong> Also known as named functions, these are defined using the <code>function</code> keyword.</li>
+        <li><strong>Arrow Functions:</strong> Introduced in ES6, these are a more concise way to write functions using the <code>=&gt;</code> syntax.</li>
+        <li><strong>Function Expressions:</strong> These are functions that are assigned to variables or properties of objects.</li>
+    </ul>
+    <p>Example:</p>
+    <pre><code>// Regular Function
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+// Arrow Function
+const greetArrow = (name) => {
+    return "Hello, " + name + "!";
+};
+
+// Function Expression
+const greetExpression = function(name) {
+    return "Hello, " + name + "!";
+};
+
+console.log(greet("Alice")); // Output: Hello, Alice!
+console.log(greetArrow("Bob")); // Output: Hello, Bob!
+console.log(greetExpression("Charlie")); // Output: Hello, Charlie!</code></pre>
+    <p>Explanation:</p>
+    <ul>
+        <li><strong>Regular Function:</strong> Uses the <code>function</code> keyword and has a name (<code>greet</code>).</li>
+        <li><strong>Arrow Function:</strong> Uses the <code>=&gt;</code> syntax and can be anonymous or assigned to a variable (<code>greetArrow</code>).</li>
+        <li><strong>Function Expression:</strong> Assigns an anonymous function to a variable or property (<code>greetExpression</code>).</li>
+    </ul>
+    <p>Each type of function has its own use cases and syntax, so choose the appropriate type based on your requirements.</p>
+</div>
+</body>
+</html>

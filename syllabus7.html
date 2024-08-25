@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript String and Math Methods</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #666;
+    margin-top: 20px;
+}
+
+p {
+    color: #333;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    overflow-x: auto;
+}
+
+code {
+    font-family: monospace;
+}
+</style>
+</head>
+<body>
+<h1>JavaScript String Manipulation Techniques Every Developer Should Know</h1>
+<p>Nipuni Arunodi</p>
+<p>November 8, 2023</p>
+<p>UPDATED</p>
+<p>Strings play a vital role in any programming language. Properly understanding string manipulation techniques can help developers easily handle tricky situations.</p>
+<p>In JavaScript, strings are immutable and help us to store text that includes characters, numbers, and Unicode. Also, JavaScript includes many built-in functions for creating and manipulating strings in various ways.</p>
+<p>In this article, I will discuss the JavaScript string manipulation techniques every developer should know.</p>
+
+<h2>1. Split a string into a character array</h2>
+<pre><code>// Example code for splitting a string into a character array using various methods
+</code></pre>
+
+<!-- Add more examples here -->
+
+<h2>2. Check for a specific sequence in a string</h2>
+<pre><code>// Example code for checking a specific sequence in a string
+</code></pre>
+
+<!-- Add more examples here -->
+
+<h2>3. Check if a string starts or ends with a specific sequence</h2>
+<pre><code>// Example code for checking if a string starts or ends with a specific sequence
+</code></pre>
+
+<!-- Add more examples here -->
+
+<h2>4. Split a string on multiple separators</h2>
+<pre><code>// Example code for splitting a string on multiple separators
+</code></pre>
+
+<!-- Add more examples here -->
+
+<h2>5. Reverse characters in a string</h2>
+<pre><code>// Example code for reversing characters in a string
+</code></pre>
+
+<!-- Add more examples here -->
+
+<h2>6. Copy a string multiple times</h2>
+<pre><code>// Example code for copying a string multiple times
+</code></pre>
+
+<!-- Add more examples here -->
+
+<h2>7. Pad a string to a specific length</h2>
+<pre><code>// Example code for padding a string to a specific length
+</code></pre>
+
+<!-- Add more examples here -->
+
+<h2>8. Count characters in a string</h2>
+<pre><code>// Example code for counting characters in a string
+</code></pre>
+
+<!-- Add more examples here -->
+
+<h2>9. Converting a letter in a string to uppercase or lowercase</h2>
+<pre><code>// Example code for converting a letter in a string to uppercase or lowercase
+</code></pre>
+
+<!-- Add more examples here -->
+
+<h2>10. Replace all occurrences of a string</h2>
+<pre><code>// Example code for replacing all occurrences of a string
+</code></pre>
+
+<!-- Add more examples here -->
+
+<p>Conclusion</p>
+<p>In almost every programming language, the string is one of the most basic data types. Developers need to deal with various string manipulations every day in their projects.</p>
+<p>This article discussed some of the most common string manipulation techniques in JavaScript every developer should know. I hope this article helped you improve your knowledge. Thank you for reading.</p>
+
+<h2>JavaScript Math</h2>
+<p>The JavaScript math object provides several constants and methods to perform mathematical operation. Unlike date object, it doesn't have constructors.</p>
+<h3>JavaScript Math Methods</h3>
+<p>Let's see the list of JavaScript Math methods with description.</p>
+
+<!-- Add more content here -->
+
+<h1>JavaScript Math Methods</h1>
+<p>The JavaScript <code>Math</code> object provides several constants and methods to perform mathematical operations. Here are some examples:</p>
+
+<p><strong>Math.sqrt(n)</strong>: The <code>Math.sqrt(n)</code> method returns the square root of the given number.</p>
+<p>Square Root of 17 is: <span id="sqrtResult"></span></p>
+
+<p><strong>Math.random()</strong>: The <code>Math.random()</code> method returns a random number between 0 and 1.</p>
+<p>Random Number is: <span id="randomResult"></span></p>
+
+<p><strong>Math.pow(m, n)</strong>: The <code>Math.pow(m, n)</code> method returns <code>m</code> to the power of <code>n</code>.</p>
+<p>3 to the power of 4 is: <span id="powResult"></span></p>
+
+<p><strong>Math.floor(n)</strong>: The <code>Math.floor(n)</code> method returns the largest integer less than or equal to a given number.</p>
+<p>Floor of 4.6 is: <span id="floorResult"></span></p>
+
+<p><strong>Math.ceil(n)</strong>: The <code>Math.ceil(n)</code> method returns the smallest integer greater than or equal to a given number.</p>
+<p>Ceil of 4.6 is: <span id="ceilResult"></span></p>
+
+<p><strong>Math.round(n)</strong>: The <code>Math.round(n)</code> method returns the value of a number rounded to the nearest integer.</p>
+<p>Round of 4.3 is: <span id="roundResult1"></span><br>
+Round of 4.7 is: <span id="roundResult2"></span></p>
+
+<p><strong>Math.abs(n)</strong>: The <code>Math.abs(n)</code> method returns the absolute value of a number.</p>
+<p>Absolute value of -4 is: <span id="absResult"></span></p>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const headings = document.querySelectorAll('h2, h3');
+    let headingNumber = 1;
+
+    headings.forEach(heading => {
+        const headingText = heading.textContent;
+        const anchorId = headingText.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+
+        heading.id = anchorId;
+        heading.innerHTML = `${headingNumber}. ${headingText}`;
+        headingNumber++;
+    });
+});
+document.getElementById('sqrtResult').textContent = Math.sqrt(17);
+document.getElementById('randomResult').textContent = Math.random();
+document.getElementById('powResult').textContent = Math.pow(3, 4);
+document.getElementById('floorResult').textContent = Math.floor(4.6);
+document.getElementById('ceilResult').textContent = Math.ceil(4.6);
+document.getElementById('roundResult1').textContent = Math.round(4.3);
+document.getElementById('roundResult2').textContent = Math.round(4.7);
+document.getElementById('absResult').textContent = Math.abs(-4);
+</script>
+
+</body>
+</html>

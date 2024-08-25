@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Syntax</title>
+</head>
+
+<body>
+    <h1>Introduction</h1>
+    <p>Before learning to write in a spoken language, you must first learn the rules of grammar. Similarly, all programming languages must adhere to specific rules in order to function. This set of rules that determine the correct structure of programming languages is known as syntax.</p>
+    <p>In this tutorial, we’ll go over many of the rules and conventions of JavaScript syntax and code structure.</p>
+
+    <h2>Functionality and Readability</h2>
+    <p>Functionality and readability are two important reasons to focus on syntax as you begin to work with JavaScript.</p>
+    <p>There are some syntax rules that are mandatory for JavaScript functionality. If they are not followed, the console will throw an error and the script will cease execution.</p>
+    <p>Consider a syntax error in the “Hello, World!” program:</p>
+    <pre><code>// Example of a broken JavaScript program
+console.log("Hello, World!"</code></pre>
+    <p>This code sample is missing the closing parenthesis, and instead of printing the expected “Hello, World!” to the console, the following error will appear:</p>
+    <pre><code>Uncaught SyntaxError: missing ) after argument list</code></pre>
+    <p>Some aspects of JavaScript syntax and formatting are based on different schools of thought. That is, there are stylistic rules or choices that are not mandatory and will not result in errors when the code is run. However, there are many common conventions that are sensible to follow, as developers between projects and codebases will be more familiar with the style. Adhering to common conventions leads to improved readability.</p>
+    <p>It is important to keep your entire coding project’s style consistent. From one organization to another, you will encounter different guidelines to follow, so you must also be flexible.</p>
+
+    <!-- More content goes here -->
+    <h2>Whitespace</h2>
+    <p>Whitespace in JavaScript consists of spaces, tabs, and newlines (pressing ENTER on the keyboard). As demonstrated earlier, excessive whitespace outside of a string and the spaces between operators and other symbols are ignored by JavaScript.</p>
+    <p>A good rule of thumb to be able to follow the most common whitespace conventions is to follow the same rules as you are used to in math and language grammar.</p>
+    <p>One notable exception to this style you may see is during assignment of multiple variables.</p>
+
+    <h2>Parentheses</h2>
+    <p>For keywords such as if, switch, and for, spaces are usually added before and after the parentheses.</p>
+    <p>When the code pertains to a function, method, or class, the parentheses will be touching the respective name.</p>
+
+    <h2>Semicolons</h2>
+    <p>JavaScript programs consist of a series of instructions known as statements, just as written paragraphs consist of a series of sentences. While a sentence will end with a period, a JavaScript statement often ends in a semicolon (;).</p>
+    <p>Semicolons are also required between the initialization, condition, and increment or decrement of a for loop.</p>
+
+    <h2>Indentation</h2>
+    <p>A complete JavaScript program can technically be written on a single line. However, this would quickly become very difficult to read and maintain. Instead, we use newlines and indentation.</p>
+    <p>Proper indentation of your code is imperative to maintain readability and to mitigate confusion.</p>
+
+    <h2>Identifiers</h2>
+    <p>The name of a variable, function, or property is known as an identifier in JavaScript. Identifiers consist of letters and numbers, but they cannot include any symbol outside of $ and _, and cannot begin with a number.</p>
+
+    <h2>Reserved Keywords</h2>
+    <p>Identifiers also must not consist of any reserved keywords. Keywords are words in the JavaScript language that have a built-in functionality, such as var, if, for, and this.</p>
+
+    <h2>Conclusion</h2>
+    <p>This article provided an overview of the basic syntax and code structure of JavaScript. Syntax is important both for proper execution of the program and for readability and maintainability for both yourself and collaborators on your code.</p>
+    <p>We reviewed many common conventions of JavaScript syntax and style in this article, but at the end of the day the most important thing to remember is to be flexible and consistent with your team or organization.</p>
+
+</body>
+
+</html>
